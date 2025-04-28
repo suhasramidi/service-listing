@@ -1,18 +1,12 @@
+import React from 'react'
 
-import React from "react"
-
-
-function ServiceCard(data) {
-  const ServiceCard = ({data})=>{
-
+const ServiceCard = ({service,description}) => {
   return (
-    <>
-    <div>
-    <h3>{data.service}</h3>
-    <p>ServiceName: {data.description}</p>
-      </div>
-    </>
+    <div >
+      <h2>Title : {service}</h2>
+      <h5>Description : {description}</h5>
+    </div>
   )
-}}
+}
 
-export default App
+export default ServiceCard

@@ -1,14 +1,27 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import data from '../data.json'
-function App(data) {
-  const [service, ServiceCard] = useState(0)
-  
+import data from "./data.json"
+import ServiceCard from './components/ServiceCard'
+
+function App() {
+  const [details,setDetails] = useState({
+    service:"",
+    description:""
+  })
+
   return (
     <>
+    <div>
+   
+    {
+      data.map((ele)=>(
+        <ServiceCard title={ele.service} description={ele.description} key={ele.id}/>
+      ))
+    }
+
+    </div>
     
+      
     </>
   )
 }
