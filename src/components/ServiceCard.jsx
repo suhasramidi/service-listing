@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ServiceCard = ({service,description}) => {
+const ServiceCard = ({title,description}) => {
   return (
-    <div >
-      <h2>Title : {service}</h2>
+    <div style={{justifyContent:"center"}}>
+      <h2>Title : {title}</h2>
       <h5>Description : {description}</h5>
     </div>
   )

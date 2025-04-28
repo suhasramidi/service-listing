@@ -1,4 +1,5 @@
-[{ "id":1, "service":"web dev", "description":"we do web development"},
-{"id":2, "service": "app dev", "description":"we do app development"},
-{"id":3, "service": "game dev", "description":"we do game development"}
+[
+    {"id":"1","title":"Web Dev","description":"We do web dev"},
+    {"id":"2","title":"app dev","description":"We do app dev"},
+    {"id":"3","title":"game dev","description":"We do game dev"}
 ]

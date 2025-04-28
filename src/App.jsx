@@ -5,17 +5,16 @@ import ServiceCard from './components/ServiceCard'
 
 function App() {
   const [details,setDetails] = useState({
-    service:"",
+    title:"",
     description:""
   })
 
   return (
     <>
-    <div>
-   
+    <div >
     {
       data.map((ele)=>(
-        <ServiceCard title={ele.service} description={ele.description} key={ele.id}/>
+        <ServiceCard title={ele.title} description={ele.description} key={ele.id}/>
       ))
     }
 
