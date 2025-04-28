@@ -2,7 +2,7 @@
 import React from "react"
 
 
-function ServiceCard(data) = {
+function ServiceCard(data) {
   const ServiceCard = ({data})=>{
 
   return (
